@@ -16,6 +16,11 @@
 
 
 
+    <!-- Independent Top-Left Logo -->
+    <a href="index.html" style="position: absolute; top: 2rem; left: 3rem; z-index: 1001;">
+        <img src="media/logo.png?v=2" alt="JJ NOORI Logo" style="height: 65px; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));">
+    </a>
+
     <!-- Header Navigation -->
     <header class="header">
         <div class="header-container">
@@ -24,11 +29,7 @@
                     <li><a href="#home" class="active">Home</a></li>
                     <li><a href="about.html">About Us</a></li>
                     <li><a href="products.html">Products</a></li>
-                    <li><a href="#industries">Industries</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#sustainability">Sustainability</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="categories.html">Categories</a></li>
                 </ul>
                 <a href="contact.html" class="btn btn-primary nav-btn">Contact Us</a>
             </nav>
@@ -45,6 +46,7 @@
             <li><a href="#home" class="mobile-link">Home</a></li>
             <li><a href="about.html" class="mobile-link">About</a></li>
             <li><a href="products.html" class="mobile-link">Products</a></li>
+            <li><a href="categories.html" class="mobile-link">Categories</a></li>
             <li><a href="contact.html" class="mobile-link">Contact</a></li>
         </ul>
     </div>
@@ -52,8 +54,11 @@
     <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="hero-bg">
-            <video autoplay loop muted playsinline class="video-bg">
+            <video autoplay loop muted playsinline class="video-bg desktop-video">
                 <source src="media/banner.mp4" type="video/mp4">
+            </video>
+            <video autoplay loop muted playsinline class="video-bg mobile-video">
+                <source src="media/mobile%20banner.mp4" type="video/mp4">
             </video>
             <div class="glass-overlay"></div>
         </div>
@@ -145,6 +150,69 @@
         </div>
     </section>
 
+    <!-- Sustainability Section -->
+    <section class="section sustainability-section" style="background: var(--clr-surface-light); padding: 100px 0;">
+        <div class="container">
+            <div class="section-header text-center fade-up">
+                <span class="section-label" style="color: var(--clr-primary-dark);">OUR COMMITMENT</span>
+                <h2 class="section-title" style="color: #111827;">Driving <span class="highlight" style="color: var(--clr-primary);">Sustainability</span></h2>
+                <p class="section-subtitle" style="color: #4B5563; font-weight: 500;">As a modern trading company, we emphasize eco-conscious practices across our operations to create a greener, cleaner future for packaging.</p>
+            </div>
+            
+            <div class="sust-bg-cards-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-top: 3rem;">
+                
+                <!-- Card 1 -->
+                <div class="sust-bg-card fade-up" style="position: relative; background-image: url('media/card_recycling.png'); background-size: cover; background-position: center; border-radius: 20px; overflow: hidden; padding: 2.5rem 2rem; min-height: 350px; display: flex; flex-direction: column; justify-content: flex-end; box-shadow: 0 15px 35px rgba(0,0,0,0.1); transition: transform 0.4s ease;">
+                    <div style="position: absolute; inset: 0; background: linear-gradient(to bottom, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.85) 100%); z-index: 1;"></div>
+                    <div style="position: relative; z-index: 2;">
+                        <div style="width: 50px; height: 50px; border-radius: 12px; background: rgba(255,255,255,0.2); backdrop-filter: blur(5px); color: white; display: flex; align-items: center; justify-content: center; font-size: 1.3rem; margin-bottom: 1.5rem;">
+                            <i class="fas fa-recycle"></i>
+                        </div>
+                        <h3 style="font-size: 1.4rem; margin-bottom: 0.5rem; color: white;">Recycling Initiatives</h3>
+                        <p style="color: rgba(255,255,255,0.85); font-size: 0.95rem; line-height: 1.6;">Promoting circular economy practices to ensure plastic materials are efficiently repurposed.</p>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="sust-bg-card fade-up delay-1" style="position: relative; background-image: url('media/card_sourcing.png'); background-size: cover; background-position: center; border-radius: 20px; overflow: hidden; padding: 2.5rem 2rem; min-height: 350px; display: flex; flex-direction: column; justify-content: flex-end; box-shadow: 0 15px 35px rgba(0,0,0,0.1); transition: transform 0.4s ease;">
+                    <div style="position: absolute; inset: 0; background: linear-gradient(to bottom, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.85) 100%); z-index: 1;"></div>
+                    <div style="position: relative; z-index: 2;">
+                        <div style="width: 50px; height: 50px; border-radius: 12px; background: rgba(255,255,255,0.2); backdrop-filter: blur(5px); color: white; display: flex; align-items: center; justify-content: center; font-size: 1.3rem; margin-bottom: 1.5rem;">
+                            <i class="fas fa-leaf"></i>
+                        </div>
+                        <h3 style="font-size: 1.4rem; margin-bottom: 0.5rem; color: white;">Sustainable Sourcing</h3>
+                        <p style="color: rgba(255,255,255,0.85); font-size: 0.95rem; line-height: 1.6;">Partnering with environmentally responsible manufacturers to reduce our carbon footprint.</p>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="sust-bg-card fade-up delay-2" style="position: relative; background-image: url('media/card_waste.png'); background-size: cover; background-position: center; border-radius: 20px; overflow: hidden; padding: 2.5rem 2rem; min-height: 350px; display: flex; flex-direction: column; justify-content: flex-end; box-shadow: 0 15px 35px rgba(0,0,0,0.1); transition: transform 0.4s ease;">
+                    <div style="position: absolute; inset: 0; background: linear-gradient(to bottom, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.85) 100%); z-index: 1;"></div>
+                    <div style="position: relative; z-index: 2;">
+                        <div style="width: 50px; height: 50px; border-radius: 12px; background: rgba(255,255,255,0.2); backdrop-filter: blur(5px); color: white; display: flex; align-items: center; justify-content: center; font-size: 1.3rem; margin-bottom: 1.5rem;">
+                            <i class="fas fa-trash-can-arrow-up"></i>
+                        </div>
+                        <h3 style="font-size: 1.4rem; margin-bottom: 0.5rem; color: white;">Waste Reduction</h3>
+                        <p style="color: rgba(255,255,255,0.85); font-size: 0.95rem; line-height: 1.6;">Implementing strict waste minimization protocols across all facilities and clients.</p>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="sust-bg-card fade-up delay-3" style="position: relative; background-image: url('media/card_eco.png'); background-size: cover; background-position: center; border-radius: 20px; overflow: hidden; padding: 2.5rem 2rem; min-height: 350px; display: flex; flex-direction: column; justify-content: flex-end; box-shadow: 0 15px 35px rgba(0,0,0,0.1); transition: transform 0.4s ease;">
+                    <div style="position: absolute; inset: 0; background: linear-gradient(to bottom, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.85) 100%); z-index: 1;"></div>
+                    <div style="position: relative; z-index: 2;">
+                        <div style="width: 50px; height: 50px; border-radius: 12px; background: rgba(255,255,255,0.2); backdrop-filter: blur(5px); color: white; display: flex; align-items: center; justify-content: center; font-size: 1.3rem; margin-bottom: 1.5rem;">
+                            <i class="fas fa-box-open"></i>
+                        </div>
+                        <h3 style="font-size: 1.4rem; margin-bottom: 0.5rem; color: white;">Eco-Friendly Materials</h3>
+                        <p style="color: rgba(255,255,255,0.85); font-size: 0.95rem; line-height: 1.6;">Expanding our catalog with a robust selection of biodegradable and compostable alternatives.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
     <!-- Call to Action -->
     <section class="cta-section">
         <div class="container cta-container">
@@ -161,7 +229,7 @@
         <div class="container footer-content-new">
             <!-- Col 1 -->
             <div class="footer-col-1">
-                <h3 style="color: white; font-size: 1.5rem; margin-bottom: 1rem;">Noor Al Madina</h3>
+                <img src="media/logo.png?v=2" alt="JJ NOORI Logo" style="height: 90px; margin-bottom: 1.5rem; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3));">
                 <p style="color: #9ca3af; font-size: 0.9rem; line-height: 1.6; margin-bottom: 2rem; max-width: 280px;">Your trusted partner in global plastic trading. Delivering premium materials and sustainable solutions across the world.</p>
                 <a href="#" class="btn-dark-outline"><i class="fas fa-download" style="margin-right: 0.5rem;"></i> Company Brochure</a>
             </div>
@@ -172,8 +240,7 @@
                 <ul class="footer-nav">
                     <li><a href="about.html">About Us</a></li>
                     <li><a href="products.html">Our Products</a></li>
-                    <li><a href="index.html#industries">Industries We Serve</a></li>
-                    <li><a href="index.html#services">Our Services</a></li>
+                    <li><a href="categories.html">Our Categories</a></li>
                     <li><a href="contact.html">Contact Us</a></li>
                 </ul>
             </div>
@@ -224,3 +291,4 @@
     <script src="script.js"></script>
 </body>
 </html>
+

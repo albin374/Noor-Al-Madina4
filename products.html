@@ -15,6 +15,11 @@
 
 <body>
 
+    <!-- Independent Top-Left Logo -->
+    <a href="index.html" style="position: absolute; top: 2rem; left: 3rem; z-index: 1001;">
+        <img src="media/logo.png?v=2" alt="JJ NOORI Logo" style="height: 65px; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));">
+    </a>
+
     <!-- Header Navigation -->
     <header class="header">
         <div class="header-container">
@@ -23,11 +28,7 @@
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About Us</a></li>
                     <li><a href="products.html" class="active">Products</a></li>
-                    <li><a href="index.html#industries">Industries</a></li>
-                    <li><a href="index.html#services">Services</a></li>
-                    <li><a href="index.html#sustainability">Sustainability</a></li>
-                    <li><a href="index.html#projects">Projects</a></li>
-                    <li><a href="index.html#faq">FAQ</a></li>
+                    <li><a href="categories.html">Categories</a></li>
                 </ul>
                 <a href="contact.html" class="btn btn-primary nav-btn">Contact Us</a>
             </nav>
@@ -73,105 +74,263 @@
         <div class="container">
             <div class="products-grid-catalog">
 
-                <!-- Product 1 -->
-                <div class="product-card-lg fade-up">
-                    <div class="product-img-wrap">
-                        <img src="media/prod_tissues.png" alt="Premium Quality Tissues & Maxi Roll">
-                    </div>
-                    <div class="product-info-lg">
-                        <span class="category-tag">Hygiene Products</span>
-                        <h3>Premium Quality Tissues & Maxi Rolls</h3>
-                        <p>High-absorbency, ultra-soft facial tissues and durable maxi rolls designed for commercial and
-                            industrial use.</p>
-                        <ul class="product-features">
-                            <li><i class="fas fa-check"></i> Ultra-soft & Absorbent</li>
-                            <li><i class="fas fa-check"></i> Bulk Packaging</li>
-                        </ul>
+                <!-- 1 -->
+                <div class="prod-grid-card fade-up">
+                    <img src="media/prod_tissues_prem.png" alt="Premium Quality Tissues" class="prod-grid-img">
+                    <div class="prod-grid-content">
+                        <h3>Premium Quality Tissues</h3>
+                        <p>Ultra-soft, highly absorbent tissues designed for everyday commercial and personal hygiene.</p>
+                        <a href="contact.html" class="prod-grid-action">Get a Quote <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
 
-                <!-- Product 2 -->
-                <div class="product-card-lg fade-up delay-1">
-                    <div class="product-img-wrap">
-                        <img src="media/prod_bags.png" alt="Custom Craft Paper Bags & Plastic Carry Bags">
-                    </div>
-                    <div class="product-info-lg">
-                        <span class="category-tag">Bags & Carriers</span>
-                        <h3>Custom Craft & Plastic Carry Bags</h3>
-                        <p>Eco-friendly brown kraft paper bags and premium, durable plastic carry bags with custom
-                            branding options.</p>
-                        <ul class="product-features">
-                            <li><i class="fas fa-check"></i> Custom Printing Available</li>
-                            <li><i class="fas fa-check"></i> High Durability</li>
-                        </ul>
+                <!-- 2 -->
+                <div class="prod-grid-card fade-up delay-1">
+                    <img src="media/prod_craft_bags.png" alt="Custom Craft Paper Bags" class="prod-grid-img">
+                    <div class="prod-grid-content">
+                        <h3>Custom Craft Paper Bags</h3>
+                        <p>Eco-friendly, durable brown kraft paper bags with customizable branding options.</p>
+                        <a href="contact.html" class="prod-grid-action">Get a Quote <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
 
-                <!-- Product 3 -->
-                <div class="product-card-lg fade-up delay-2">
-                    <div class="product-img-wrap">
-                        <img src="media/prod_plates.png" alt="Bio Degradable Plates">
-                    </div>
-                    <div class="product-info-lg">
-                        <span class="category-tag">Eco-Friendly Packaging</span>
-                        <h3>Bio-Degradable Plates</h3>
-                        <p>Sustainable, compostable plates made from plant-based materials. Perfect for catering and
-                            events without the environmental impact.</p>
-                        <ul class="product-features">
-                            <li><i class="fas fa-check"></i> 100% Compostable</li>
-                            <li><i class="fas fa-check"></i> Microwave Safe</li>
-                        </ul>
+                <!-- 3 -->
+                <div class="prod-grid-card fade-up delay-2">
+                    <img src="media/prod_plastic_bags.png" alt="Custom Plastic Carry Bags" class="prod-grid-img">
+                    <div class="prod-grid-content">
+                        <h3>Custom Plastic Carry Bags</h3>
+                        <p>Premium, sleek, and durable plastic carry bags for retail and food service industries.</p>
+                        <a href="contact.html" class="prod-grid-action">Get a Quote <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
 
-                <!-- Product 4 -->
-                <div class="product-card-lg fade-up">
-                    <div class="product-img-wrap">
-                        <img src="media/prod_cups.png" alt="Premium Ripple Cups & Custom Cups">
-                    </div>
-                    <div class="product-info-lg">
-                        <span class="category-tag">Beverage Packaging</span>
-                        <h3>Premium Ripple & Custom Cups</h3>
-                        <p>Insulated ripple cups and bold custom-printed paper cups. Ideal for hot and cold beverages in
-                            cafes and restaurants.</p>
-                        <ul class="product-features">
-                            <li><i class="fas fa-check"></i> Superior Heat Insulation</li>
-                            <li><i class="fas fa-check"></i> Secure Lids Included</li>
-                        </ul>
+                <!-- 4 -->
+                <div class="prod-grid-card fade-up delay-3">
+                    <img src="media/prod_maxi_roll.png" alt="Custom Maxi Roll" class="prod-grid-img">
+                    <div class="prod-grid-content">
+                        <h3>Custom Maxi Roll</h3>
+                        <p>Thick, highly absorbent industrial paper towel rolls tailored for heavy-duty cleaning.</p>
+                        <a href="contact.html" class="prod-grid-action">Get a Quote <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
 
-                <!-- Product 5 -->
-                <div class="product-card-lg fade-up delay-1">
-                    <div class="product-img-wrap">
-                        <img src="media/prod_boxes.png" alt="Pizza Covers & Food Boxes">
-                    </div>
-                    <div class="product-info-lg">
-                        <span class="category-tag">Food Packaging</span>
-                        <h3>Burger, Club & Pizza Boxes</h3>
-                        <p>Premium corrugated cardboard packaging tailored for the food industry. Includes pizza covers,
-                            club boxes, and burger boxes.</p>
-                        <ul class="product-features">
-                            <li><i class="fas fa-check"></i> Grease-Resistant</li>
-                            <li><i class="fas fa-check"></i> Sturdy Construction</li>
-                        </ul>
+                <!-- 5 -->
+                <div class="prod-grid-card fade-up">
+                    <img src="media/prod_bio_plates.png" alt="Bio Degradable Plates" class="prod-grid-img">
+                    <div class="prod-grid-content">
+                        <h3>Bio-Degradable Plates (7", 9", 10")</h3>
+                        <p>100% compostable, plant-based plates available in multiple sizes for eco-conscious catering.</p>
+                        <a href="contact.html" class="prod-grid-action">Get a Quote <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
 
-                <!-- Product 6 -->
-                <div class="product-card-lg fade-up delay-2">
-                    <div class="product-img-wrap">
-                        <img src="media/prod_cutlery.png" alt="Chopsticks & Toothpicks">
+                <!-- 6 -->
+                <div class="prod-grid-card fade-up delay-1">
+                    <img src="media/prod_pizza_boxes.png" alt="Pizza Package Pack" class="prod-grid-img">
+                    <div class="prod-grid-content">
+                        <h3>Pizza Package Pack</h3>
+                        <p>Sturdy, grease-resistant corrugated pizza boxes ensuring your food stays hot and secure.</p>
+                        <a href="contact.html" class="prod-grid-action">Get a Quote <i class="fas fa-arrow-right"></i></a>
                     </div>
-                    <div class="product-info-lg">
-                        <span class="category-tag">Cutlery & Accessories</span>
-                        <h3>Wooden Chopsticks & Toothpicks</h3>
-                        <p>High-quality, individually wrapped wooden chopsticks and toothpicks for hygienic restaurant
-                            service.</p>
-                        <ul class="product-features">
-                            <li><i class="fas fa-check"></i> Individually Wrapped</li>
-                            <li><i class="fas fa-check"></i> Splinter-Free Finish</li>
-                        </ul>
+                </div>
+
+                <!-- 7 -->
+                <div class="prod-grid-card fade-up delay-2">
+                    <img src="media/prod_paper_cups.png" alt="Paper Cups" class="prod-grid-img">
+                    <div class="prod-grid-content">
+                        <h3>Paper Cups</h3>
+                        <p>Premium insulated paper cups for hot and cold beverages, perfect for cafes and restaurants.</p>
+                        <a href="contact.html" class="prod-grid-action">Get a Quote <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- 8 -->
+                <div class="prod-grid-card fade-up delay-3">
+                    <img src="media/prod_alu_containers.png" alt="High Quality Aluminum Containers" class="prod-grid-img">
+                    <div class="prod-grid-content">
+                        <h3>High Quality Aluminum Containers</h3>
+                        <p>Durable, heat-retaining aluminum containers with secure lids for food delivery and catering.</p>
+                        <a href="contact.html" class="prod-grid-action">Get a Quote <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- 9 -->
+                <div class="prod-grid-card fade-up">
+                    <img src="media/prod_light_bottles.png" alt="Premium Light Weighted Bottles" class="prod-grid-img">
+                    <div class="prod-grid-content">
+                        <h3>Premium Lightweight Bottles</h3>
+                        <p>Pristine, crystal-clear, lightweight plastic bottles for beverages and retail packaging.</p>
+                        <a href="contact.html" class="prod-grid-action">Get a Quote <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- 10 -->
+                <div class="prod-grid-card fade-up delay-1">
+                    <img src="media/prod_facial_tissues.png" alt="Premium Facial Tissues" class="prod-grid-img">
+                    <div class="prod-grid-content">
+                        <h3>Premium Facial Tissues</h3>
+                        <p>Elegant, multi-ply facial tissues in beautifully designed corporate packaging.</p>
+                        <a href="contact.html" class="prod-grid-action">Get a Quote <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- 11 -->
+                <div class="prod-grid-card fade-up delay-2">
+                    <img src="media/prod_food_containers.png" alt="Premium Food Containers" class="prod-grid-img">
+                    <div class="prod-grid-content">
+                        <h3>Premium Food Containers</h3>
+                        <p>High-quality, leak-proof plastic meal prep containers with secure black bases and clear lids.</p>
+                        <a href="contact.html" class="prod-grid-action">Get a Quote <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- 12 -->
+                <div class="prod-grid-card fade-up delay-3">
+                    <img src="media/prod_cutlery.png" alt="Chopsticks" class="prod-grid-img">
+                    <div class="prod-grid-content">
+                        <h3>Chopsticks</h3>
+                        <p>Individually wrapped, splinter-free bamboo chopsticks for hygienic restaurant service.</p>
+                        <a href="contact.html" class="prod-grid-action">Get a Quote <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- 13 -->
+                <div class="prod-grid-card fade-up">
+                    <img src="media/prod_cutlery.png" alt="Toothpicks" class="prod-grid-img">
+                    <div class="prod-grid-content">
+                        <h3>Toothpicks</h3>
+                        <p>Premium wooden toothpicks, securely packaged for hospitality and dining establishments.</p>
+                        <a href="contact.html" class="prod-grid-action">Get a Quote <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- 14 -->
+                <div class="prod-grid-card fade-up delay-1">
+                    <img src="media/p1.png" alt="Dual Action Sponges" class="prod-grid-img">
+                    <div class="prod-grid-content">
+                        <h3>Dual Action Sponges</h3>
+                        <p>Heavy-duty, dual-sided cleaning sponges designed for industrial and commercial kitchens.</p>
+                        <a href="contact.html" class="prod-grid-action">Get a Quote <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- 15 -->
+                <div class="prod-grid-card fade-up delay-2">
+                    <img src="media/prod_cutlery.png" alt="Eco-friendly Wooden Cutlery" class="prod-grid-img">
+                    <div class="prod-grid-content">
+                        <h3>Eco-friendly Wooden Cutlery</h3>
+                        <p>Sustainable birch wood forks, knives, and spoons providing a premium, zero-waste dining experience.</p>
+                        <a href="contact.html" class="prod-grid-action">Get a Quote <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- 16 -->
+                <div class="prod-grid-card fade-up delay-3">
+                    <img src="media/prod_cutlery.png" alt="Wooden Coffee Stirrers" class="prod-grid-img">
+                    <div class="prod-grid-content">
+                        <h3>Wooden Coffee Stirrers</h3>
+                        <p>Smooth, splinter-free wooden stirrers perfect for hot beverages and eco-conscious cafes.</p>
+                        <a href="contact.html" class="prod-grid-action">Get a Quote <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- 17 -->
+                <div class="prod-grid-card fade-up">
+                    <img src="media/prod_plastic_bags.png" alt="Garbage Bags" class="prod-grid-img">
+                    <div class="prod-grid-content">
+                        <h3>Garbage Bags</h3>
+                        <p>Heavy-duty, tear-resistant garbage bags available in multiple sizes for commercial waste management.</p>
+                        <a href="contact.html" class="prod-grid-action">Get a Quote <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- 18 -->
+                <div class="prod-grid-card fade-up delay-1">
+                    <img src="media/prod_alu_containers.png" alt="Aluminum Pot" class="prod-grid-img">
+                    <div class="prod-grid-content">
+                        <h3>Aluminum Pot</h3>
+                        <p>Large, high-quality disposable aluminum pots with lids, perfect for catering large events.</p>
+                        <a href="contact.html" class="prod-grid-action">Get a Quote <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- 19 -->
+                <div class="prod-grid-card fade-up delay-2">
+                    <img src="media/prod_boxes.png" alt="Kraft Paper Lunch Boxes" class="prod-grid-img">
+                    <div class="prod-grid-content">
+                        <h3>Kraft Paper Lunch Boxes</h3>
+                        <p>Foldable, leak-resistant kraft lunch boxes ideal for takeaways and eco-friendly packaging.</p>
+                        <a href="contact.html" class="prod-grid-action">Get a Quote <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- 20 -->
+                <div class="prod-grid-card fade-up delay-3">
+                    <img src="media/prod_boxes.png" alt="Burger Box" class="prod-grid-img">
+                    <div class="prod-grid-content">
+                        <h3>Burger Box</h3>
+                        <p>Sturdy, heat-retaining corrugated kraft burger boxes that keep fast food fresh and secure.</p>
+                        <a href="contact.html" class="prod-grid-action">Get a Quote <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- 21 -->
+                <div class="prod-grid-card fade-up">
+                    <img src="media/prod_food_containers.png" alt="Durable Microwave Food Containers" class="prod-grid-img">
+                    <div class="prod-grid-content">
+                        <h3>Durable Microwave Food Containers</h3>
+                        <p>Microwave-safe, BPA-free durable food containers designed for reheating and meal prep.</p>
+                        <a href="contact.html" class="prod-grid-action">Get a Quote <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- 22 -->
+                <div class="prod-grid-card fade-up delay-1">
+                    <img src="media/prod_craft_bags.png" alt="Eco-friendly Kraft Paper Bags" class="prod-grid-img">
+                    <div class="prod-grid-content">
+                        <h3>Eco-friendly Kraft Paper Bags</h3>
+                        <p>Sustainable shopping bags made from recycled kraft paper, featuring reinforced handles.</p>
+                        <a href="contact.html" class="prod-grid-action">Get a Quote <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- 23 -->
+                <div class="prod-grid-card fade-up delay-2">
+                    <img src="media/prod_boxes.png" alt="Iftar Boxes" class="prod-grid-img">
+                    <div class="prod-grid-content">
+                        <h3>Iftar Boxes</h3>
+                        <p>Specially designed, elegantly printed boxes ideal for Iftar distributions and meal packaging.</p>
+                        <a href="contact.html" class="prod-grid-action">Get a Quote <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- 24 -->
+                <div class="prod-grid-card fade-up delay-3">
+                    <img src="media/prod_bags.png" alt="Printed Wrapping Paper" class="prod-grid-img">
+                    <div class="prod-grid-content">
+                        <h3>Printed Wrapping Paper</h3>
+                        <p>Custom-printed, grease-resistant wrapping paper for sandwiches, burgers, and baked goods.</p>
+                        <a href="contact.html" class="prod-grid-action">Get a Quote <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- 25 -->
+                <div class="prod-grid-card fade-up">
+                    <img src="media/prod_cups.png" alt="Popcorn Cups" class="prod-grid-img">
+                    <div class="prod-grid-content">
+                        <h3>Popcorn Cups</h3>
+                        <p>Classic, vibrant paper popcorn cups in various sizes for cinemas, events, and concessions.</p>
+                        <a href="contact.html" class="prod-grid-action">Get a Quote <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- 26 -->
+                <div class="prod-grid-card fade-up delay-1">
+                    <img src="media/prod_cups.png" alt="Kraft Soup Bowls" class="prod-grid-img">
+                    <div class="prod-grid-content">
+                        <h3>Kraft Soup Bowls</h3>
+                        <p>Thick, insulated kraft bowls with tight-fitting lids, perfect for hot soups and liquid foods.</p>
+                        <a href="contact.html" class="prod-grid-action">Get a Quote <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
 
@@ -184,38 +343,34 @@
         <div class="container footer-content-new">
             <!-- Col 1 -->
             <div class="footer-col-1">
-                <h3 style="color: white; font-size: 1.5rem; margin-bottom: 1rem;">Noor Al Madina</h3>
-                <p style="color: #9ca3af; font-size: 0.9rem; line-height: 1.6; margin-bottom: 2rem; max-width: 280px;">
-                    Your trusted partner in global plastic trading. Delivering premium materials and sustainable
-                    solutions across the world.</p>
-                <a href="#" class="btn-dark-outline"><i class="fas fa-download" style="margin-right: 0.5rem;"></i>
-                    Company Brochure</a>
+                <img src="media/logo.png?v=2" alt="JJ NOORI Logo" style="height: 90px; margin-bottom: 1.5rem; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3));">
+                <p style="color: #9ca3af; font-size: 0.9rem; line-height: 1.6; margin-bottom: 2rem; max-width: 280px;">Your trusted partner in global plastic trading. Delivering premium materials and sustainable solutions across the world.</p>
+                <a href="#" class="btn-dark-outline"><i class="fas fa-download" style="margin-right: 0.5rem;"></i> Company Brochure</a>
             </div>
-
+            
             <!-- Col 2 -->
             <div class="footer-col">
                 <h4 style="color: white; margin-bottom: 1.5rem;">Quick Links</h4>
                 <ul class="footer-nav">
                     <li><a href="about.html">About Us</a></li>
                     <li><a href="products.html">Our Products</a></li>
-                    <li><a href="index.html#industries">Industries We Serve</a></li>
-                    <li><a href="index.html#services">Our Services</a></li>
+                    <li><a href="categories.html">Our Categories</a></li>
                     <li><a href="contact.html">Contact Us</a></li>
                 </ul>
             </div>
-
+            
             <!-- Col 3 -->
             <div class="footer-col">
                 <h4 style="color: white; margin-bottom: 1.5rem;">Products</h4>
                 <ul class="footer-nav">
-                    <li><a href="#">Premium Tissues</a></li>
-                    <li><a href="#">Custom Bags</a></li>
-                    <li><a href="#">Eco Plates</a></li>
-                    <li><a href="#">Ripple Cups</a></li>
-                    <li><a href="#">Food Boxes</a></li>
+                    <li><a href="#">Virgin Plastics</a></li>
+                    <li><a href="#">Recycled Plastics</a></li>
+                    <li><a href="#">Engineering Resins</a></li>
+                    <li><a href="#">Masterbatches</a></li>
+                    <li><a href="#">Additives</a></li>
                 </ul>
             </div>
-
+            
             <!-- Col 4 -->
             <div class="footer-col">
                 <h4 style="color: white; margin-bottom: 1.5rem;">Contact Us</h4>
@@ -235,7 +390,7 @@
                 </ul>
             </div>
         </div>
-
+        
         <div class="container footer-bottom-new">
             <p>&copy; 2026 Noor Al Madina. All rights reserved.</p>
             <div class="footer-social-new">
@@ -251,3 +406,4 @@
 </body>
 
 </html>
+

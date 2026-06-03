@@ -12,6 +12,11 @@
 </head>
 <body>
 
+    <!-- Independent Top-Left Logo -->
+    <a href="index.html" style="position: absolute; top: 2rem; left: 3rem; z-index: 9999;">
+        <img src="media/logo.png?v=2" alt="JJ NOORI Logo" style="height: 65px; filter: drop-shadow(0 4px 6px rgba(0,0,0,0.3));">
+    </a>
+
     <!-- Header Navigation -->
     <header class="header">
         <div class="header-container">
@@ -20,11 +25,7 @@
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html" class="active">About Us</a></li>
                     <li><a href="products.html">Products</a></li>
-                    <li><a href="index.html#industries">Industries</a></li>
-                    <li><a href="index.html#services">Services</a></li>
-                    <li><a href="index.html#sustainability">Sustainability</a></li>
-                    <li><a href="index.html#projects">Projects</a></li>
-                    <li><a href="index.html#faq">FAQ</a></li>
+                    <li><a href="categories.html">Categories</a></li>
                 </ul>
                 <a href="contact.html" class="btn btn-primary nav-btn">Contact Us</a>
             </nav>
@@ -95,19 +96,25 @@
     <section class="section mission-vision-section" style="background: #FAFAFA;">
         <div class="container">
             <div class="mission-vision-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem;">
-                <div class="mv-card fade-up" style="background: white; padding: 3rem; border-radius: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.03);">
-                    <div class="mv-icon" style="width: 60px; height: 60px; border-radius: 12px; background: rgba(158, 16, 139, 0.1); color: var(--clr-primary); display: flex; align-items: center; justify-content: center; font-size: 1.5rem; margin-bottom: 1.5rem;">
-                        <i class="fas fa-bullseye"></i>
+                <div class="mv-card fade-up" style="position: relative; background-image: url('media/p1.png'); background-size: cover; background-position: center; padding: 3rem; border-radius: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); overflow: hidden;">
+                    <div style="position: absolute; inset: 0; background: rgba(0,0,0,0.65); z-index: 1;"></div>
+                    <div style="position: relative; z-index: 2;">
+                        <div class="mv-icon" style="width: 60px; height: 60px; border-radius: 12px; background: rgba(255, 255, 255, 0.2); backdrop-filter: blur(5px); color: white; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; margin-bottom: 1.5rem;">
+                            <i class="fas fa-bullseye"></i>
+                        </div>
+                        <h3 style="font-size: 1.8rem; margin-bottom: 1rem; color: white;">Our Mission</h3>
+                        <p style="color: rgba(255,255,255,0.9); line-height: 1.7;">To empower manufacturers globally by providing consistent, high-grade plastic raw materials. We strive to optimize supply chains and deliver unmatched value through reliability and market expertise.</p>
                     </div>
-                    <h3 style="font-size: 1.8rem; margin-bottom: 1rem; color: #111827;">Our Mission</h3>
-                    <p style="color: #4B5563; line-height: 1.7;">To empower manufacturers globally by providing consistent, high-grade plastic raw materials. We strive to optimize supply chains and deliver unmatched value through reliability and market expertise.</p>
                 </div>
-                <div class="mv-card fade-up delay-1" style="background: white; padding: 3rem; border-radius: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.03);">
-                    <div class="mv-icon" style="width: 60px; height: 60px; border-radius: 12px; background: rgba(158, 16, 139, 0.1); color: var(--clr-primary); display: flex; align-items: center; justify-content: center; font-size: 1.5rem; margin-bottom: 1.5rem;">
-                        <i class="far fa-eye"></i>
+                <div class="mv-card fade-up delay-1" style="position: relative; background-image: url('media/p2.png'); background-size: cover; background-position: center; padding: 3rem; border-radius: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); overflow: hidden;">
+                    <div style="position: absolute; inset: 0; background: rgba(0,0,0,0.65); z-index: 1;"></div>
+                    <div style="position: relative; z-index: 2;">
+                        <div class="mv-icon" style="width: 60px; height: 60px; border-radius: 12px; background: rgba(255, 255, 255, 0.2); backdrop-filter: blur(5px); color: white; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; margin-bottom: 1.5rem;">
+                            <i class="far fa-eye"></i>
+                        </div>
+                        <h3 style="font-size: 1.8rem; margin-bottom: 1rem; color: white;">Our Vision</h3>
+                        <p style="color: rgba(255,255,255,0.9); line-height: 1.7;">To be the undisputed leader and most trusted partner in the Middle East plastic trading sector, championing sustainable materials and driving innovation in global sourcing.</p>
                     </div>
-                    <h3 style="font-size: 1.8rem; margin-bottom: 1rem; color: #111827;">Our Vision</h3>
-                    <p style="color: #4B5563; line-height: 1.7;">To be the undisputed leader and most trusted partner in the Middle East plastic trading sector, championing sustainable materials and driving innovation in global sourcing.</p>
                 </div>
             </div>
         </div>
@@ -193,7 +200,7 @@
         <div class="container footer-content-new">
             <!-- Col 1 -->
             <div class="footer-col-1">
-                <h3 style="color: white; font-size: 1.5rem; margin-bottom: 1rem;">Noor Al Madina</h3>
+                <img src="media/logo.png?v=2" alt="JJ NOORI Logo" style="height: 90px; margin-bottom: 1.5rem; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3));">
                 <p style="color: #9ca3af; font-size: 0.9rem; line-height: 1.6; margin-bottom: 2rem; max-width: 280px;">Your trusted partner in global plastic trading. Delivering premium materials and sustainable solutions across the world.</p>
                 <a href="#" class="btn-dark-outline"><i class="fas fa-download" style="margin-right: 0.5rem;"></i> Company Brochure</a>
             </div>
@@ -204,8 +211,7 @@
                 <ul class="footer-nav">
                     <li><a href="about.html">About Us</a></li>
                     <li><a href="products.html">Our Products</a></li>
-                    <li><a href="index.html#industries">Industries We Serve</a></li>
-                    <li><a href="index.html#services">Our Services</a></li>
+                    <li><a href="categories.html">Our Categories</a></li>
                     <li><a href="contact.html">Contact Us</a></li>
                 </ul>
             </div>
@@ -256,3 +262,4 @@
     <script src="script.js"></script>
 </body>
 </html>
+
