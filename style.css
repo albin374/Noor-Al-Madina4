@@ -239,20 +239,25 @@ h1, h2, h3, h4, h5, h6 {
 .mobile-nav {
     position: fixed;
     top: 0;
-    right: -100%;
+    left: 0;
     width: 100%;
     height: 100vh;
-    background: rgba(255, 255, 255, 0.98);
-    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(15px);
     z-index: 999;
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: var(--transition-slow);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-20px);
+    transition: opacity 0.4s ease, transform 0.4s ease, visibility 0.4s;
 }
 
 .mobile-nav.active {
-    right: 0;
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
 }
 
 .mobile-nav-links {
@@ -1075,6 +1080,7 @@ h1, h2, h3, h4, h5, h6 {
         grid-template-columns: 1fr;
     }
     
+    .about-header-grid,
     .about-overview-grid,
     .mission-vision-grid,
     .why-choose-grid {
@@ -1088,6 +1094,33 @@ h1, h2, h3, h4, h5, h6 {
     .footer-bottom-new {
         flex-direction: column;
         gap: 1.5rem;
+    }
+    
+    /* Mobile Header Layout Adjustments */
+    body > a[href="index.html"] {
+        left: 1rem !important;
+        top: 1.5rem !important;
+    }
+    
+    body > a[href="index.html"] img {
+        height: 50px !important;
+    }
+
+    .header {
+        left: auto !important;
+        right: 1rem !important;
+        transform: none !important;
+        width: auto !important;
+        padding: 0.25rem !important;
+        top: 1.5rem !important;
+    }
+    
+    .header.scrolled {
+        top: 1rem !important;
+    }
+
+    .mobile-menu-btn {
+        padding: 0.5rem 0.75rem;
     }
 }
 
