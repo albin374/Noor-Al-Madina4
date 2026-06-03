@@ -239,36 +239,35 @@ h1, h2, h3, h4, h5, h6 {
 .mobile-nav {
     position: fixed;
     top: 0;
-    left: 0;
-    width: 100%;
+    right: -100%;
+    width: 65%;
+    max-width: 320px;
     height: 100vh;
-    background: rgba(255, 255, 255, 0.95);
+    background: rgba(255, 255, 255, 0.98);
     backdrop-filter: blur(15px);
     z-index: 999;
     display: flex;
     align-items: center;
-    justify-content: center;
-    opacity: 0;
-    visibility: hidden;
-    transform: translateY(-20px);
-    transition: opacity 0.4s ease, transform 0.4s ease, visibility 0.4s;
+    justify-content: flex-start;
+    padding-left: 2rem;
+    box-shadow: -5px 0 25px rgba(0,0,0,0.1);
+    transition: right 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
 .mobile-nav.active {
-    opacity: 1;
-    visibility: visible;
-    transform: translateY(0);
+    right: 0;
 }
 
 .mobile-nav-links {
-    text-align: center;
+    text-align: left;
     display: flex;
     flex-direction: column;
     gap: 2rem;
+    width: 100%;
 }
 
 .mobile-link {
-    font-size: 2rem;
+    font-size: 1.4rem;
     font-weight: 600;
     color: var(--clr-primary-dark);
 }
@@ -1081,10 +1080,21 @@ h1, h2, h3, h4, h5, h6 {
     }
     
     .about-header-grid,
+    .about-stats-grid,
     .about-overview-grid,
     .mission-vision-grid,
     .why-choose-grid {
         grid-template-columns: 1fr !important;
+    }
+
+    .stat-box {
+        border-left: none !important;
+        border-bottom: 1px solid rgba(0,0,0,0.08);
+        padding: 2rem 0 !important;
+    }
+
+    .stat-box:last-child {
+        border-bottom: none;
     }
     
     .footer-content-new {
