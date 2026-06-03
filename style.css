@@ -1084,6 +1084,11 @@ h1, h2, h3, h4, h5, h6 {
         padding-bottom: 25px !important;
     }
     
+    .section-title {
+        font-size: 2.8rem !important;
+        word-wrap: break-word;
+    }
+    
     .about-header-grid,
     .about-stats-grid,
     .about-overview-grid,
